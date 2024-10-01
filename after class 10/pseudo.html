@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            border:5px solid rgb(122, 4, 138) 
+        }
+            input[type="password"]{
+                border:7px solid salmon
+            }
+            ul> li{
+                color:darkslateblue
+            }
+            h1 + p{
+                color:brown
+            }
+            p + p{
+                color:yellowgreen
+            }
+            a:hover{
+                color:blueviolet
+            }
+            li:nth-child(1) {
+                background-color:orangered
+            }
+            div:not(.class1) {
+                border: 10px blue solid;
+            }
+            .Before::before{
+                content:"UC"
+            }
+    </style>
+</head>
+<body>
+    <!--advanced selector-->
+    <!--attribute selector-->
+    <input type="text" placeholder="Enter name"><br><br>
+    <input type="password" placeholder="enter password">
+    <!--Child selectors-->
+    <ul>
+        <li>list 1</li>
+        <li>another list</li>
+        <li>and this list</li>
+    </ul>
+    <!--Sibling selector-->
+    <h1>This is the end of line</h1>
+    <p>read from down to up(for this paragraphs</p>
+    <p>a text for project</p>
+    <!--pseudo classes-->
+    <a href="#">This is just a test message for the speudo element</a>
+    <!--nth child-->
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+    </ul>
+    <!--not selector-->
+    <div class="class1">Div 1</div>
+    <div class="class2">Div 2</div>
+    <!--pseudo element-->
+    <p class="Before">Before</p>
+    <p class="After">After</p>
+    <p class="Firstletter">first</p>
+</body>
+</html>
